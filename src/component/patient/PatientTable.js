@@ -81,7 +81,7 @@ const PatientTable = () => {
     
     const getData = useCallback(async () => {
         setIsTableLoading(true);
-        const res = await axios.get("http://localhost:8080/api/Patient");
+        const res = await api.get("https://localhost:8080/api/Patient");
         if (res.status === 200) {
           const data = res.data.map((row) => {
             const ID = generateID(row.id, row.created_time);

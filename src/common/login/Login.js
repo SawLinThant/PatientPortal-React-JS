@@ -93,7 +93,7 @@ const Login = () => {
     // } else {
     //   openAlert({ status: res.status, detail: res.data.detail });
     // }
-    const res= await axios.post(`http://localhost:8080/api/Login/Login`,details,
+    const res= await axios.post("https://localhost:8080/api/Login/Login",details,
     {
       headers: {
         "Content-Type": "application/json",

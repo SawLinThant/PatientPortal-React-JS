@@ -83,7 +83,7 @@ const StyledBox = styled(Box)(({ theme }) => ({
         return;
       }
       const res = await axios.post(
-        `https://localhost:7053/api/SignIn/SingUp`,
+        `https://localhost:8080/api/SignIn/SingUp`,
         {
           username: details.username,
           password: details.password,
